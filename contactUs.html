@@ -9,6 +9,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="shortcut icon" href="icon.ico"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Kayak Sans"; font-weight: bold;}
@@ -17,85 +22,93 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Kayak Sans"; font-weight: bold;}
 
 </head>
 
-<body>
+<body style="background-color: #8fc0aa;">
 
-	<!-- Navbar -->
-	<div class="w3-top">
-	  <div class="w3-bar w3-white w3-card w3-large">
-	    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-	    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">W|</a>
-	    <a href="index.html#aboutUs" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
-	    <a href="index.html#workshops" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Workshops</a>
-	    <a href="index.html#photos" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Photos</a>
-	    <a href="contactUs.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
-	  </div>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">W|</a>
+    <a href="index.html#aboutUs" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
+    <a href="index.html#workshops" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Workshops</a>
+    <a href="index.html#photos" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Photos</a>
+    <a href="contactUs.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
+  </div>
 
-	  <!-- Navbar on small screens -->
-	  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-	    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-	    <a href="#aboutUs" class="w3-bar-item w3-button w3-padding-large">About Us</a>
-	    <a href="#workshops" class="w3-bar-item w3-button w3-padding-large">Workshops</a>
-	    <a href="contactUs.html" class="w3-bar-item w3-button w3-padding-large">Contact Us</a>
-	  </div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="#aboutUs" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+    <a href="#workshops" class="w3-bar-item w3-button w3-padding-large">Workshops</a>
+    <a href="contactUs.html" class="w3-bar-item w3-button w3-padding-large">Contact Us</a>
+  </div>
+</div>
+
+	<div class="w3-half" id="form" style="padding: 120px;">
+		<div class="w3-half">
+			<div>
+			<h1>
+			Comments and suggestions?
+			</h1>
+			<h2 style="margin-top: -10; font-size: 20px;">
+			Leave us a message!
+			</h2>
+			</div>
+			<div class="form-div" style="">	
+
+				<form action="">
+				  	<input style="width: 500px; background-color:#8fc0aa; border: 0px; border-bottom: 1px solid #000;" type="text" name="name" placeholder="Name">
+				  <br><br>
+				  	<input style="width: 500px; background-color:#8fc0aa; border: 0px; border-bottom: 1px solid #000;" type="text" name="email" placeholder="Email Address">
+				  <br><br>
+					 <input style="width: 500px; background-color:#8fc0aa; border: 0px; border-bottom: 1px solid #000;" type="text" name="subject" placeholder="Subject">
+				 <br><br>
+				 <textarea name="message" style="width:500px; height:100px; background-color:#8fc0aa; border: 0px; border-bottom: 1px solid #000;" placeholder="Message"></textarea>
+			  	<br><br>
+ 		  		<input type="submit"  style="background-color:#FFF; color: #8fc0aa; border: none; height: 50px; width: 250px;" value="Submit">
+			</form> 
+		</div>
 	</div>
 
-	<section id ="header">
-	  <header class="w3-container w3-center" style="padding:70px; background-image: url('grid.png'); position: relative;">
-	    <h1 class="w3-margin w3-jumbo">Got comments or suggestions?</h1>
-	    </header>
-	</section>
+	</div>
 
-	<section id="contactDetails">
-		<div class="w3-half w3-center" style="background-color: #8fc0aa;">
-			<h1>
-				We'd love to hear from you!
-			</h1>
-
-			<h2 style="font-size: 20px;">
-			    <i class="fa fa-facebook"></i>&nbsp;<a href="http://facebook.com/TheWorkroomMNL">Facebook</a><br>
-    			<i class="fa fa-instagram"></i>&nbsp;<a href="http://instagram.com/TheWorkroomMNL">Instagram</a><br>
-    			<i class="fa fa-phone"></i>&nbsp;0915 635 6008<br>
-    			<i class="fa fa-envelope"></i>&nbsp;theworkroomMNL@gmail.com<br>
-			</h2>
-		</div>
-	</section>
-
-	<section id="form">
-		<div class="w3-half w3-center">
-		<h1>
-			Want to tell us something?
-		</h1>
-		<h2 style="margin-top: -15; font-size: 20px;">
-			Leave us a message!
-		</h2>
-			<div class="form-div" style="padding-left: 10%; padding-right: 10%;">	
-				<form action="">
-				  First name:<br>
-				  <input style="width: 200px;" type="text" name="firstname" value="">
-				  <br>
-				  Last name:<br>
-				  <input style="width: 200px;" type="text" name="lastname" value="">
-				  <br>
-				  Email:<br>
-				  <input style="width: 200px;" type="text" name="email" value="">
-				  <br>
-				  Message:<br>
-				  <textarea name="message" style="width:200px; height:100px;"></textarea>
-				  <br>
-				  <input type="submit" value="Submit">
-				</form> 
-			</div>
-		</div>
-	</section>
 	
 <!-- Footer -->
-<section>
-	<footer class="w3-container w3-center w3-padding-large" style="background-color: #8fc0aa;">
-	  <div class="w3-xlarge">
-	    <p style="text-align: center; font-size: 10px;">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>  
-	  </div>
-	</footer>
-</section>
+<footer class="w3-container w3-center" style="background-color:#8fc0aa;">
+	<div class="w3-left-align w3-third w3-container">
+		<h3 style="font-size: 20px;">
+		Contact Details:
+		</h3>
+		<p style="font-size: 15px;">
+			<i class="fa fa-envelope"></i>&nbsp;theworkroomMNL@gmail.com<br>
+			<i class="fa fa-mobile"></i>&nbsp;+63 915 635 6008<br>
+		</p>
+		<p>
+		Follow us on social media: <br>
+			<p style="font-size: 20px; margin-top: -10px;">
+		    <i class="fa fa-facebook"></i>&nbsp;<a href="http://facebook.com/TheWorkroomMNL"></a>
+			<i class="fa fa-instagram"></i>&nbsp;<a href="http://instagram.com/TheWorkroomMNL"></a>
+			</p>
+		</p>
+	</div>
+
+	<div class="w3-container w3-third">
+		<div>
+			<h1 style="font-size: 20px; text-align: right;">
+				Subscribe to our newsletter:
+			</h1>
+			<div style="border: 0px; border-bottom: 1px solid #000;" class="w3-left-align">
+				<input style="width: 200px; background-color:transparent; border: none;" type="text" name="subEmail" placeholder="Your Email Address">
+				<input style="text-align: center; background-color:transparent; color: #FFF; border: 5px #FFF; height: 25px; width: 100px; position: left;" type="Submit" value="Subscribe">
+			</div>
+		</div>
+	</div>
+</footer>
+
+  <div class="w3-xlarge">
+    <p style="text-align: center; font-size: 10px;">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>  
+  </div>
+
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
